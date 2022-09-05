@@ -49,5 +49,12 @@ allprojects {
         }
         google()
         maven { url 'https://www.jitpack.io' }
+
+        mavenLocal()
+        jcenter(){
+            content {
+                includeModule("com.yqritc", "android-scalablevideoview")
+            }
+        }
     }
 }
