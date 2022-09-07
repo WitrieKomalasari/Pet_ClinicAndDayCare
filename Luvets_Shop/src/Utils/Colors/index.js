@@ -11,7 +11,7 @@ const mainColors = {
   red1: '#E06379',
 };
 
-export const Colors = {
+const colors = {
   white: mainColors.white,
   black: mainColors.black,
   primary: mainColors.blue1,
@@ -44,3 +44,5 @@ export const Colors = {
     },
   },
 };
+
+export default colors;

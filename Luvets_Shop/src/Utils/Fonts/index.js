@@ -1,4 +1,4 @@
-export const fonts = {
+const fonts = {
   primary: {
     200: 'Nunito-ExtraLight',
     300: 'Nunito-Light',
@@ -19,4 +19,11 @@ export const fonts = {
     900: 'OpenSans-Black',
     normal: 'OpenSans-Regular',
   },
+  third: {
+    light: 'Poppins-Light',
+    medium: 'Poppins-Medium',
+    normal: 'Poppins-Regular',
+  },
 };
+
+export default fonts;

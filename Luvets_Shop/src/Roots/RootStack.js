@@ -1,6 +1,7 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
 import {GetStarted, Loading, SignIn, SplashScreen} from '../Pages';
+import MainTab from './TabNavigator';
 
 const Stack = createStackNavigator();
 
@@ -17,8 +18,13 @@ const RootStack = () => {
         component={Loading}
         options={{headerShown: false}}
       />
-      <Stack.Screen name="GetStarted" component={GetStarted} />
+      <Stack.Screen
+        name="GetStarted"
+        component={GetStarted}
+        options={{headerShown: false}}
+      />
       <Stack.Screen name="SignIn" component={SignIn} />
+      <Stack.Screen name="MainTab" component={MainTab} />
     </Stack.Navigator>
   );
 };
